@@ -1,0 +1,20 @@
+{
+  "name": "chin-plugins-imagemin",
+  "version": "0.0.0",
+  "main": "cjs.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "babel index.js -o cjs.js"
+  },
+  "dependencies": {
+    "imagemin": "^5.3.1",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-pngquant": "^5.0.1",
+    "imagemin-svgo": "^6.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
