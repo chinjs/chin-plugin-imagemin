@@ -8,7 +8,7 @@ export default (options = {}) => ({
   OptimizeJpg: () => data =>
     imagemin.buffer(data, {
       plugins: [
-        jpegtran(options.jpg || {
+        jpegtran(options.OptimizeJpg || {
           progressive: true
           // arithmetic: true
         })
@@ -18,7 +18,7 @@ export default (options = {}) => ({
   OptimizePng: () => data =>
     imagemin.buffer(data, {
       plugins: [
-        pngquant(options.png || {
+        pngquant(options.OptimizePng || {
           /**
           floyd: :number | :boolean,
           nofs: :boolean,
@@ -34,16 +34,16 @@ export default (options = {}) => ({
   OptimizeSvg: () => data =>
     imagemin.buffer(data, {
       plugins: [
-        svgo(options.svg || {
+        svgo(options.OptimizeSvg || {
           js2svg: { pretty: true },
           full: true,
-          plugins
+          plugins: svgoPlugins
         })
       ]
     })
 })
 
-const plugins = [
+const svgoPlugins = [
   'removeDoctype',
   'removeXMLProcInst',
   'removeComments',

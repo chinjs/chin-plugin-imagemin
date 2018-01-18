@@ -25,14 +25,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = (options = {}) => ({
 
   OptimizeJpg: () => data => _imagemin2.default.buffer(data, {
-    plugins: [(0, _imageminJpegtran2.default)(options.jpg || {
+    plugins: [(0, _imageminJpegtran2.default)(options.OptimizeJpg || {
       progressive: true
       // arithmetic: true
     })]
   }),
 
   OptimizePng: () => data => _imagemin2.default.buffer(data, {
-    plugins: [(0, _imageminPngquant2.default)(options.png || {
+    plugins: [(0, _imageminPngquant2.default)(options.OptimizePng || {
       /**
       floyd: :number | :boolean,
       nofs: :boolean,
@@ -45,14 +45,14 @@ exports.default = (options = {}) => ({
   }),
 
   OptimizeSvg: () => data => _imagemin2.default.buffer(data, {
-    plugins: [(0, _imageminSvgo2.default)(options.svg || {
+    plugins: [(0, _imageminSvgo2.default)(options.OptimizeSvg || {
       js2svg: { pretty: true },
       full: true,
-      plugins
+      plugins: svgoPlugins
     })]
   })
 });
 
-const plugins = ['removeDoctype', 'removeXMLProcInst', 'removeComments', 'removeMetadata', 'removeXMLNS', 'removeEditorsNSData', 'cleanupAttrs', 'minifyStyles',
+const svgoPlugins = ['removeDoctype', 'removeXMLProcInst', 'removeComments', 'removeMetadata', 'removeXMLNS', 'removeEditorsNSData', 'cleanupAttrs', 'minifyStyles',
 // "convertStyleToAttrs",
 'cleanupIDs', 'removeRasterImages', 'removeUselessDefs', 'cleanupNumericValues', 'cleanupListOfValues', 'convertColors', 'removeUnknownsAndDefaults', 'removeNonInheritableGroupAttrs', 'removeUselessStrokeAndFill', 'removeViewBox', 'cleanupEnableBackground', 'removeHiddenElems', 'removeEmptyText', 'convertShapeToPath', 'moveElemsAttrsToGroup', 'moveGroupAttrsToElems', 'collapseGroups', 'convertPathData', 'convertTransform', 'removeEmptyAttrs', 'removeEmptyContainers', 'mergePaths', 'removeUnusedNS', 'sortAttrs', 'removeTitle', 'removeDesc', 'removeDimensions', 'removeAttrs', 'removeElementsByAttr', 'addClassesToSVGElement', 'removeStyleElement', 'addAttributesToSVGElement'];
