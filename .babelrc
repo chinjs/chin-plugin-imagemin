@@ -1,1 +1,11 @@
-{ "presets": [["env", { "targets": { "node": "current" } }]] }
+{
+  "env": {
+    "TEST": {
+      "presets": ["env", "power-assert"],
+      "plugins": ["istanbul"]
+    },
+    "EXAMPLE": {
+      "presets": ["env"]
+    }
+  }
+}

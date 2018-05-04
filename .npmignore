@@ -1,0 +1,8 @@
+images/
+.babelrc
+.gitignore
+.travis.yml
+chin.config.js
+codecov.yml
+test.js
+yarn.lock

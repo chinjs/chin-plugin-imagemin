@@ -1,23 +1,55 @@
 {
   "name": "chin-plugins-imagemin",
-  "version": "0.0.0",
-  "main": "cjs.js",
+  "version": "0.0.1",
+  "repository": "kthjm/chin-plugin-imagemin",
+  "author": "kthjm <toxictoxer@gmail.com>",
+  "main": "index.js",
   "license": "MIT",
-  "private": true,
+  "description": "Chin plugin using imagemin.",
+  "keywords": [
+    "chin",
+    "plugin",
+    "imagemin",
+    "gifsicle",
+    "jpegtran",
+    "optipng",
+    "svgo"
+  ],
+  "nyc": {
+    "sourceMap": false,
+    "instrument": false,
+    "require": [
+      "babel-register"
+    ]
+  },
   "scripts": {
-    "build": "babel index.js -o cjs.js"
+    "ex": "cross-env BABEL_ENV=EXAMPLE chin -c -r babel-register",
+    "test": "cross-env BABEL_ENV=TEST nyc mocha -t 10000",
+    "coverage": "nyc report --reporter=lcov && codecov"
   },
   "dependencies": {
-    "imagemin": "^5.3.1",
+    "imagemin": "^5.3.1"
+  },
+  "optionalDependencies": {
+    "imagemin-gifsicle": "^5.2.0",
     "imagemin-jpegtran": "^5.0.2",
-    "imagemin-pngquant": "^5.0.1",
+    "imagemin-optipng": "^5.2.1",
     "imagemin-svgo": "^6.0.0"
   },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
-  },
   "peerDependencies": {
-    "chin": "^2.1.2"
+    "chin": "^3.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-istanbul": "^4.1.6",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-power-assert": "^2.0.0",
+    "chin": "^3.0.2",
+    "codecov": "^3.0.1",
+    "cross-env": "^5.1.4",
+    "mocha": "^5.1.1",
+    "nyc": "^11.7.1",
+    "power-assert": "^1.5.0",
+    "rewire": "^4.0.1"
   }
 }
