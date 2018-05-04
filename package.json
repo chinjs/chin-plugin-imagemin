@@ -1,6 +1,6 @@
 {
   "name": "chin-plugin-imagemin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "kthjm/chin-plugin-imagemin",
   "author": "kthjm <toxictoxer@gmail.com>",
   "main": "index.js",
@@ -8,12 +8,16 @@
   "description": "Chin plugin using imagemin.",
   "keywords": [
     "chin",
-    "plugin",
+    "chin-plugin",
     "imagemin",
     "gifsicle",
     "jpegtran",
     "optipng",
-    "svgo"
+    "svgo",
+    "gif",
+    "jpg",
+    "png",
+    "svg"
   ],
   "nyc": {
     "sourceMap": false,
