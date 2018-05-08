@@ -1,6 +1,6 @@
 {
   "name": "chin-plugin-imagemin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "kthjm/chin-plugin-imagemin",
   "author": "kthjm <toxictoxer@gmail.com>",
   "main": "index.js",
@@ -41,14 +41,13 @@
     "imagemin-svgo": "^6.0.0"
   },
   "peerDependencies": {
-    "chin": "^3.0.2"
+    "chin": "^3.0.5"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-plugin-istanbul": "^4.1.6",
     "babel-preset-env": "^1.6.1",
     "babel-preset-power-assert": "^2.0.0",
-    "chin": "^3.0.2",
     "codecov": "^3.0.1",
     "cross-env": "^5.1.4",
     "mocha": "^5.1.1",
