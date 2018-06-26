@@ -1,7 +1,7 @@
 {
   "name": "chin-plugin-imagemin",
-  "version": "0.0.3",
-  "repository": "kthjm/chin-plugin-imagemin",
+  "version": "0.0.4",
+  "repository": "chinjs/chin-plugin-imagemin",
   "author": "kthjm <toxictoxer@gmail.com>",
   "main": "index.js",
   "license": "MIT",
