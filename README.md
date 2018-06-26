@@ -1,11 +1,11 @@
 # chin-plugin-imagemin
 
-[![npm](https://img.shields.io/npm/v/chin-plugin-imagemin.svg?style=flat-square)](https://www.npmjs.com/package/chin-plugin-imagemin)
-[![npm](https://img.shields.io/npm/dm/chin-plugin-imagemin.svg?style=flat-square)](https://www.npmjs.com/package/chin-plugin-imagemin)
-[![Build Status](https://img.shields.io/travis/kthjm/chin-plugin-imagemin.svg?style=flat-square)](https://travis-ci.org/kthjm/chin-plugin-imagemin)
-[![Coverage Status](https://img.shields.io/codecov/c/github/kthjm/chin-plugin-imagemin.svg?style=flat-square)](https://codecov.io/github/kthjm/chin-plugin-imagemin)
+[![npm](https://img.shields.io/npm/v/chin-plugin-imagemin.svg?longCache=true&style=flat-square)](https://www.npmjs.com/package/chin-plugin-imagemin)
+[![npm](https://img.shields.io/npm/dm/chin-plugin-imagemin.svg?longCache=true&style=flat-square)](https://www.npmjs.com/package/chin-plugin-imagemin)
+[![Build Status](https://img.shields.io/travis/chinjs/chin-plugin-imagemin.svg?longCache=true&style=flat-square)](https://travis-ci.org/chinjs/chin-plugin-imagemin)
+[![Coverage Status](https://img.shields.io/codecov/c/github/chinjs/chin-plugin-imagemin.svg?longCache=true&style=flat-square)](https://codecov.io/github/chinjs/chin-plugin-imagemin)
 
-[chin](https://github.com/kthjm/chin) plugin using [imagemin](https://github.com/imagemin/imagemin) (designed by refer to [`gulp-imagemin`](https://github.com/sindresorhus/gulp-imagemin) including default optimizers).
+[chin](https://github.com/chinjs/chin) plugin using [imagemin](https://github.com/imagemin/imagemin) (designed by refer to [`gulp-imagemin`](https://github.com/sindresorhus/gulp-imagemin) including default optimizers).
 
 ## Installation
 ```shell
